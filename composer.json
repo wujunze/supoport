@@ -1,0 +1,36 @@
+{
+    "name": "wujunze/support",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ye Wenbin",
+            "email": "wenbinye@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpunit/phpunit": "^5.0",
+        "kuiper/helper": "*",
+        "winwin/composer-phpcs-plugin": "^0.1",
+        "vlucas/valitron": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "winwin\\support\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "winwin\\support\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.2-dev"
+        }
+    }
+}
